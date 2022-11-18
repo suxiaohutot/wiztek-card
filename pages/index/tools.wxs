@@ -1,0 +1,17 @@
+// 此函数为 根据输入的数值 改变职称的 第一行的自字数 样式
+var positionNumLengthStr = function(num) {
+  console.log(num)
+  if(num > 4 || num == null || num == '' || num < 3){
+    return 'position-part1'
+    // return num
+  }else if(num == 3){
+    return 'position-short3 position-part1'
+  }else if (num == 4){
+    return 'position-short4 position-part1'
+  }else{
+    return 'position-part1'
+  }
+}
+module.exports = {
+  positionNumLengthStr: positionNumLengthStr,
+}

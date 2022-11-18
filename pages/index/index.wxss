@@ -1,0 +1,210 @@
+/* 阿里云矢量图标的引入 */
+@import "../../icon//icon.wxss";
+
+.card {
+  margin: 10px;
+  position: relative;
+}
+
+.top {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #5f687e;
+}
+
+.logo {
+    width: 140px;
+    margin: 40px 70px;
+}
+
+.name {
+  position: absolute;
+  top: 80rpx;
+  right: 210rpx;
+  font-size: 23px;
+  letter-spacing:10rpx;
+  color: red;
+}
+
+.body {
+  width: 100%;
+}
+
+.phone {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 20 20;
+}
+
+.tishi {
+  text-align: center;
+}
+
+.topImage{
+  animation: image 1.5s infinite; 
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+/* card 底部文字 */
+.topImage{
+  animation: image 1.5s infinite; 
+  width: 100%;
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #727785;
+}
+@keyframes image {
+  0% {
+      transform: translate(0px, 0px);
+  }
+  50% {
+      transform: translate(0px, -9px);
+  }
+  100% {
+      transform: translate(0px, 0px);
+  }
+}
+.waik{
+  box-shadow: 2px 2px 10px #a7a7a7;
+  padding: 20px 0 20px 0;
+}
+.part1{
+  margin: 0 0 0 0;
+  display: flex;
+}
+.logoPng{
+  width: 100px;
+  height: 100px;
+  padding: 10px 0 0 40px;
+}
+.part1-text{
+  display: flex;
+  padding: 0 0 0 26px;
+}
+.name-part1{
+  font-size: 22px;
+  padding: 1px 0 0 35px;
+}
+/* 一行文字的样式   1~4字内通用   */
+.position-part1{
+  font-size: 13px;
+  padding: 10px 0 0 6px;
+  max-width : 120px;
+}
+/*   --------   两行两端对齐1    --------- */
+.position-short3{
+  /* 3个字 */
+  width: 43px;
+  margin: -5px 0 0 3px;
+  font-size: 11px;
+  text-align: justify;
+  line-height: 118%;
+}
+.position-short4{
+  /* 4个字 */
+  width: 50px;
+  margin: -5px 0 0 3px;
+  font-size: 11px;
+  text-align: justify;
+  line-height: 118%;
+}
+/*   --------   两行两端对齐2    --------- */
+.position-short3:after{
+  display: inline-block;
+  width: 100%;
+  content: "";
+}
+.position-short4:after{
+  display: inline-block;
+  width: 100%;
+  content: "";
+}
+
+.part2{
+  display: flex;
+  align-items: center;
+  margin: 32px 0 20px;
+  height: 36px;
+  background-color: #ef7e21;
+}
+.part2-name{
+  font-size: 16px;
+  color: white;
+  background-color: #ef7e21;
+  padding: 0px 0 0px 30px;
+  vertical-align: middle;
+  flex: 1;
+}
+.part-QrCode{
+  width: 66px;
+  height: 66px;
+  margin-top: -10px;
+  border-style: solid;
+  border-color: #ef7e21;
+  border-width:1px;
+  margin-right: 30px;
+  background-color: white;
+}
+.QeCode{
+  height: 66px;
+  width: 66px;
+  /* 切割图片 */
+  /* position:absolute;
+  clip:rect(20px 60px 73px 6px);
+  margin: -15px 0 0 0; */
+  /* 比例缩放 */
+  /* transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2); */
+}
+/* .part-kong{
+  background-color: #ef7e21;
+  margin: 10px 0 10px 0px;
+  width:13vh;
+} */
+.part3{
+  padding: 0 20px 0 20px;
+  font-size: 12px;
+}
+.part3-flex{
+  display: flex;
+  justify-content: space-between; /* 组件左右对齐 */
+  margin:  3px 0;
+}
+.part3-flex-iconTel{
+  /* display: flex; */
+  line-height: 20px;
+}
+.icon-magin-right{
+  margin-right: 4px;
+}
+.part3-1q{
+  display: flex;
+}
+.part3-n1{
+  width:  61%;
+}
+.part3-n1-sxjj{
+  margin: 4px 0 ;
+}
+.part3-n1-NoLine{
+  display: inline-block;
+}
+.part3-n2{
+  /* width:  40%; */
+  flex: 1;
+}
+
+.displayNo{
+  display: none;
+}
+
+.hide{
+  display: none;
+ }
+ .show{ 
+  display: block;
+ }

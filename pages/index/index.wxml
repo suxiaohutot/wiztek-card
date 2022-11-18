@@ -1,0 +1,72 @@
+<!-- 引用函数 -->
+<wxs src="./tools.wxs" module="tools" />
+<view>
+<!-- bindtap="phoneNumTap"     单击拨打个人电话 -->
+  <view class="card" >
+  <!-- bindlongpress="phoneNumTap"   长按拨打个人电话 -->
+   <image  class="hide{{showView ? '' : 'show top'}}" src="{{imgUrl}}"  bindtap="phoneNumTap" show-menu-by-longpress="{{true}}" ></image>
+   <view class="hide{{showView ? 'show waik' : ''}}" >
+    <view class="part1" bindtap="phoneNumTap">
+      <view> 
+        <image class="logoPng" src="{{logoPng}}" mode="widthFix" ></image>
+      </view>
+      <view class="part1-text">
+        <view class="name-part1">{{part1Name}}</view>
+        <!-- <view class="{{position.length > 4 ? 'position-part1 position-short6' : 'position-part1'}} ">{{position}}</view> -->
+        <view class="{{ tools.positionNumLengthStr(positionNum) }} ">{{position}}</view>
+      </view>
+    </view>
+      <!-- <view>{{ tools.positionNumLengthStr(3) }}</view> -->
+    <view class="part2" bindtap="phoneNumTap">
+      <view class="part2-name">{{companyName}}</view>
+      <view class="part-QrCode">
+        <image class="QeCode" show-menu-by-longpress="{{true}}" src="{{QrCode}}" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="part3">
+      <view class="part3-1q">
+        <!-- 3 左边 -->
+        <view class="part3-n1" bindtap="phoneNumTap">
+        <!-- bindtap="phoneNumTapClick"  单击拨打手机 -->
+          <view class="part3-n1-sxjj" >
+            <view class="iconfont icon-phone part3-n1-NoLine"></view>
+            {{phoneNum}}
+          </view>
+          <view class="part3-n1-sxjj">
+            <view class="iconfont icon-youxiang_ part3-n1-NoLine"></view>
+            {{email}}
+          </view>
+        </view>
+        <!-- 3 右边 -->
+        <view class="part3-n2" bindtap="phoneNumTap">
+        <!-- bindtap="phoneNumTapPhone" 单击拨打公司电话 -->
+          <view class="part3-n1-sxjj" >
+            <view class="iconfont icon-phone_ icon-magin-right part3-n1-NoLine"></view>
+            {{phoneA}}
+          </view>
+          <view class="part3-n1-sxjj">
+            <view class="iconfont icon-gongsi icon-magin-right part3-n1-NoLine"></view>
+            {{website}}
+          </view>
+        </view>
+      </view>
+      <!-- 地址 -->
+      <view>
+        <view class="part3-flex-iconTel " bindtap="toAddress">
+          <view class="iconfont icon-dizhi_1 icon-magin-right part3-n1-NoLine"></view>
+          {{address}}
+        </view>
+      </view>
+    </view>
+   </view>
+
+  </view>
+  <view>
+    <view class="hide{{showView ? 'show topImage':''}}" > ↑ 单击添加到通讯录，长按二维码关注公众号 ↑ </view>
+    <image class="hide{{showView ? '':'show topImage'}}" src="../../img/zhizhen.png" mode="widthFix" hidden="{{isShowOld}}"></image>
+  </view>
+  <view>
+    <image class="body" src="../../img/body.png" mode="widthFix" bindtap="phoneNumTap"></image>
+  </view>
+</view>
+ 
